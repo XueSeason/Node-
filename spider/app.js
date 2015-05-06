@@ -41,7 +41,7 @@ var req = http.request(options, function (res) {
 			}
 			download();			
 		}
-	})
+	});
 });
 
 req.on('error', function (err) {
