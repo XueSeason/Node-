@@ -20,3 +20,12 @@ node code_insert_相应数据库.js
 Node.js简单爬虫，爬取豆瓣电影首页的海报，并存储到本地的images文件夹中(确保当前项目目录下存在images文件夹)。  
 没有用到第三方库，可自行添加其它功能，如存储到数据库等。  
 
+#captcha
+
+使用第三方库[ccap](https://github.com/DoubleSpout/ccap)生成验证码。  
+具体操作可以参考示例代码，也可以参考ccap文档。  
+
+```
+npm install ccap
+node app.js
+```
