@@ -29,3 +29,16 @@ Node.js简单爬虫，爬取豆瓣电影首页的海报，并存储到本地的i
 npm install ccap
 node app.js
 ```
+
+#rateLimiter
+
+依赖第三方库[pacer](https://github.com/rowanmanning/pacer?utm_source=nodeweekly&utm_medium=email)，主要功能是限制客户端一定时间内的请求次数。  
+在网络安全中尤为重要。  
+使用前保证已安装完成Redis数据库。  
+
+```
+redis-server
+npm install pacer
+node app.js
+```
+
