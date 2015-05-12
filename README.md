@@ -42,3 +42,26 @@ npm install pacer
 node app.js
 ```
 
+#qrcode
+
+生成二维码图片
+
+```
+npm install qrcode -g
+npm install qrcode
+node app.js
+```
+
+本人在Mac上按照如上步骤亲测失败，执行以下步骤解决问题：  
+
+```
+1. brew install  pkgconfig  // 前提是安装了 homebrew
+
+2. 安装 XQuartz [下载地址](https://xquartz.macosforge.org)
+
+3. brew install Cairo
+
+4. cp /opt/X11/lib/pkgconfig/*.pc /usr/local/lib/pkgconfig
+```
+
+
