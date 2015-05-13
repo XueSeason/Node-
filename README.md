@@ -47,15 +47,15 @@ node app.js
 生成二维码图片
 
 ```
-npm install qrcode -g
 npm install qrcode
 node app.js
 ```
 
-本人在Mac上按照如上步骤亲测失败，执行以下步骤解决问题：  
+前提是要装cairo和其他的图像处理的库
+MacOS系统，执行以下：  
 
 ```
-1. brew install  pkgconfig  // 前提是安装了 homebrew
+1. brew install pkgconfig  // 前提是安装了 homebrew
 
 2. 安装 XQuartz [下载地址](https://xquartz.macosforge.org)
 
@@ -64,4 +64,13 @@ node app.js
 4. cp /opt/X11/lib/pkgconfig/*.pc /usr/local/lib/pkgconfig
 ```
 
+在Ubuntu系统执行以下命令：
+
+```
+sudo apt-get update 
+sudo apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++
+sudo npm install canvas
+```
+
+更多详情，请参照Canvas的[wiki](https://github.com/Automattic/node-canvas/wiki)
 
