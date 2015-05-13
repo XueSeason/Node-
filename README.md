@@ -74,3 +74,11 @@ sudo npm install canvas
 
 更多详情，请参照Canvas的[wiki](https://github.com/Automattic/node-canvas/wiki)
 
+#chatroom
+
+基于socket.io的聊天室。
+
+```
+npm install
+node app.js
+```
