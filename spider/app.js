@@ -1,4 +1,4 @@
-var http = require('http');
+var https = require('https');
 var fs = require('fs');
 
 var options = {
@@ -8,7 +8,7 @@ var options = {
 var body = "";
 var dir = './images/';
 
-var req = http.request(options, function (res) {
+var req = https.request(options, function (res) {
 	res.setEncoding('utf8');
 	res.on('data', function (chunk) {
 		body += chunk;
@@ -37,7 +37,7 @@ var req = http.request(options, function (res) {
 					});
 				};
 
-				http.get(link, callback);
+				https.get(link, callback);
 			}
 			download();			
 		}
